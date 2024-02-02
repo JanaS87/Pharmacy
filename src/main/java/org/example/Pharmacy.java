@@ -34,7 +34,7 @@ public class Pharmacy {
             Medication medication = entry.getValue();
             System.out.println("Name: " + medication.getName() +
                     ", Price: " + medication.getPrice() +
-                    ", Availability: " + medication.isAvailability());
+                    ", Availability: " + medication.getAvailability());
         }
     }
 
