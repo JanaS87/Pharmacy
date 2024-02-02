@@ -10,5 +10,13 @@ public class Main {
         pharmacy.save(medication2);
 
         pharmacy.printAll();
+
+        Medication medication = pharmacy.find("Paracetamol");
+        System.out.println(medication);
+
+        pharmacy.delete("Paracetamol");
+        pharmacy.printAll();
+
+        System.out.println("Count: " + pharmacy.getCount());
     }
 }
